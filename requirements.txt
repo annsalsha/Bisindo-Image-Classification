@@ -1,0 +1,19 @@
+# Core
+numpy
+pandas
+matplotlib
+seaborn
+
+# Deep Learning
+tensorflow
+keras
+
+# Image preprocessing
+Pillow
+opencv-python
+
+# Streamlit for web interface
+streamlit
+
+# Evaluation & utilities
+scikit-learn
