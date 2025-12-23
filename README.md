@@ -1,4 +1,6 @@
-# Klasifikasi Citra Bahasa Isyarat BISINDO
+<div align="center", sytle>
+### **Klasifikasi Citra Bahasa Isyarat BISINDO**
+</div>
 
 ## Deskripsi Proyek
 Proyek ini bertujuan untuk mengklasifikasikan citra bahasa isyarat BISINDO (Bahasa Isyarat Indonesia) menggunakan pendekatan Deep Learning. Sistem dikembangkan dalam bentuk website interaktif menggunakan Streamlit.
