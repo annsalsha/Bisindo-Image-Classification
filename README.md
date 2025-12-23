@@ -1,6 +1,8 @@
-<div align="center", sytle>
-### **Klasifikasi Citra Bahasa Isyarat BISINDO**
-</div>
+<h1 align="center">
+<b>Klasifikasi Citra Bahasa Isyarat BISINDO</b>
+</h1>
+![Smiling man and woman with deafness using signs… (1)](https://github.com/user-attachments/assets/f49ac3f9-9432-45ed-8493-01dab150b134)
+
 
 ## Deskripsi Proyek
 Proyek ini bertujuan untuk mengklasifikasikan citra bahasa isyarat BISINDO (Bahasa Isyarat Indonesia) menggunakan pendekatan Deep Learning. Sistem dikembangkan dalam bentuk website interaktif menggunakan Streamlit.
