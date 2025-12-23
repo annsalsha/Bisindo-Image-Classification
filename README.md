@@ -2,6 +2,8 @@
 <b>Klasifikasi Citra Bahasa Isyarat BISINDO</b>
 </h1>
 
+Table of Content
+
 
 ---
 
@@ -18,11 +20,6 @@ Bahasa Isyarat Indonesia (BISINDO) merupakan media komunikasi penting bagi penya
 - Membantu komunikasi antara penyandang tunarungu dan masyarakat umum.
 - Mendukung proses pembelajaran bahasa isyarat.
 - Menjadi dasar bagi pengembangan aplikasi berbasis computer vision untuk edukasi dan aksesibilitas.
-  
-Tiga model yang digunakan:
-- Convolutional Neural Network (CNN)
-- VGG16
-- ResNet50
 
 ---
 <h2 align="center">
@@ -75,7 +72,6 @@ Tahapan preprocessing yang dilakukan:
   - VGG16: menggunakan fungsi preprocess_input dari Keras untuk menyesuaikan input dengan pretrained model
   - ResNet50: menggunakan fungsi preprocess_input untuk menyesuaikan input dengan pretrained model
 
----
 
 ## Pemodelan
 
@@ -171,22 +167,22 @@ Sistem web menyediakan 4 menu:
 - ResNet50
 - Evaluation
 
-# Tampilan EDA
+## Tampilan EDA
 Tampilan EDA menampilkan contoh gambar, distribusi kelas, serta statistik dataset seperti jumlah kelas, total data, dan rata-rata sampel per kelas, untuk memahami karakteristik dataset BISINDO sebelum preprocessing dan pelatihan model.
 <img width="1366" height="635" alt="image" src="https://github.com/user-attachments/assets/9073ee27-aba0-4a08-a426-a202af607ed5" />
 
-# Tampilan Model
+## Tampilan Model
 Pengguna dapat mengunggah gambar gesture tangan, lalu sistem akan melakukan prediksi untuk menampilkan huruf alfabet BISINDO yang sesuai beserta tingkat keyakinan (confidence) prediksi model.
 <img width="1366" height="465" alt="image" src="https://github.com/user-attachments/assets/dd2d74f0-84fd-4336-9880-b78e38d7cf98" />
 
-# Tampilan Evaluation
+## Tampilan Evaluation
 Sistem menampilkan confusion matrix untuk melihat kesalahan klasifikasi per kelas, serta learning curve berupa grafik loss dan accuracy selama proses training dan validation, guna mengevaluasi performa model secara keseluruhan.
 <img width="1366" height="590" alt="image" src="https://github.com/user-attachments/assets/3087c6e5-a035-418e-bfc5-5e48917dc3b2" />
 
 ---
 
 <h2 align="center">
-<b>Langkah Instalasi</b>
+<b>🛠️Langkah Instalasi🛠️</b>
 </h2>
 
 1. Clone Repository
