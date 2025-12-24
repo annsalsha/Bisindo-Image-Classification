@@ -3,7 +3,12 @@
 </h1>
 
 Table of Content
-
+1. [Deskripsi Proyek](#deskripsi-proyek)
+2. Dataset
+3. Preprocessing dan Pemodelan
+4. Hasil dan Analisis
+5. Sistem Klasifikasi Sederhana
+6. Langkah Instalasi
 
 ---
 
@@ -96,6 +101,7 @@ Kelebihan
 
 ### 2. Transfer Learninga
 a. VGG16
+
 VGG16 adalah model pretrained populer yang menggunakan arsitektur convolutional dalam-dalam. Dalam proyek ini, strategi training dilakukan dua tahap:
 - Feature Extraction (Frozen Convolutional Base)
   Bagian convolutional dari VGG16 dikunci (frozen) sehingga hanya classifier (Dense layer) yang dilatih.
@@ -110,6 +116,7 @@ Kelebihan strategi ini:
 - Memanfaatkan fitur umum dari ImageNet sekaligus menyesuaikan fitur khusus dataset Bisindo.
 
 b. ResNet50
+
 ResNet50 adalah model pretrained yang terkenal dengan residual connection, sehingga mampu mengatasi masalah vanishing gradient pada model sangat dalam. Strategi training di proyek ini juga menggunakan dua tahap:
 - Feature Extraction (Frozen Convolutional Base)
   Convolutional base dikunci, hanya classifier yang dilatih.
@@ -192,7 +199,7 @@ Sistem menampilkan confusion matrix untuk melihat kesalahan klasifikasi per kela
     ```
 2. Download file model & kode sumber dari Google Drive
 
-   Link: https://drive.google.com/drive/folders/1VzozMIRV-RiY-gf_ZcVfQ94Bv9XTqaYW?usp=sharing
+   Link: https://drive.google.com/drive/folders/193ICDZsoRFmc5h9SKiLpU668eg_xxWa3?usp=sharing
    
    Simpan ke folder yang sesuai di lokal:
     ```
