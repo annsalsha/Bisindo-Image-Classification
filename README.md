@@ -2,13 +2,30 @@
 <b>Klasifikasi Citra Bahasa Isyarat BISINDO</b>
 </h1>
 
-Table of Content
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/60a659d5-7f6f-4d3c-9dc5-4d3099f96cea" />
+</p>
+<p align="center">sumber: https://pin.it/72N8HBVfQ </p>
+<h1 align="center">
+<b>Table of Content</b>
+</h1>
+
 1. [Deskripsi Proyek](#deskripsi-proyek)
-2. Dataset
-3. Preprocessing dan Pemodelan
-4. Hasil dan Analisis
-5. Sistem Klasifikasi Sederhana
-6. Langkah Instalasi
+   - [Latar Belakang](#latar-belakang)
+   - [Tujuan Pengembangan](#tujuan-pengembangan)
+2. [Dataset](#dataset)
+3. [Preprocessing dan Pemodelan](#preprocessing-dan-pemodelan)
+   - [Preprocessing Data](#preprocessing-data)
+   - [Pemodelan](#pemodelan)
+4. [Hasil dan Analisis](#hasil-dan-analisis)
+   - [Classification Report](#classification-report)
+   - [Confusion Matrix](#confusion-matrix)
+   - [Learning Curve](#learning-curve)
+5. [Sistem Klasifikasi Sederhana](sistem-klasifikasi-sederhana)
+   - [Tampilan EDA](#tampilan-eda)
+   - [Tampilan Model](#tampilan-model)
+   - [Tampilan Evaluation](#tampilan-evaluation)
+6. [Langkah Instalasi](#langkah-instalasi)
 
 ---
 
@@ -99,7 +116,7 @@ Kelebihan
 - Dapat dijalankan tanpa membutuhkan pretrained weights.
 - Memberikan gambaran performa awal dataset sebelum strategi transfer learning diterapkan.
 
-### 2. Transfer Learninga
+### 2. Transfer Learning
 a. VGG16
 
 VGG16 adalah model pretrained populer yang menggunakan arsitektur convolutional dalam-dalam. Dalam proyek ini, strategi training dilakukan dua tahap:
@@ -142,13 +159,13 @@ Residual connection memungkinkan fine-tuning lebih stabil dibanding VGG16.
 - Recall → kemampuan model mendeteksi semua sampel dari kelas tertentu
 - F1-score → kombinasi precision dan recall
 
-Tabel Perbandingan :
-| Metric   | CNN | VGG16 | ResNet50 |
-|----------|-----|-------|----------|
-| Precision| 86% | 84%   | 98%      |
-| Recall   | 85% |84%    |98%       |
-| F1-Score | 85% |84%    |98%       |
-| Accuracy | 85% | 84%   | 98%      |
+Tabel Perbandingan dan Analisis:
+
+| Model     | Precision | Recall | F1-Score  | Accuracy | Analisis |
+|-----------|-----------|--------|-----------|----------|----------|
+| CNN       | 86%       | 85%    | 85%       | 85%      | Model baseline mampu mengenali pola dasar gesture BISINDO dengan baik, namun masih terbatas dalam menangkap fitur kompleks |
+| VGG16     | 84%       | 84%    | 84%       | 84%      | Transfer learning membantu ekstraksi fitur, tetapi performa belum optimal kemungkinan karena keterbatasan variasi data dan fine tuning terbatas  |
+| ResNet50  | 98%       | 98%    | 98%       | 98%      | Memiliki arsitektur yang lebih dalam dengan residual connection sehingga mampu menangkap fitur kompleks dan menghasilkan performa terbaik |
 
 ## Confusion Matrix
 | CNN | VGG16 | ResNet50 |
